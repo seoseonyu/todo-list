@@ -2,13 +2,13 @@ import {
   Column,
   CreateDateColumn,
   Entity,
-  PrimaryColumn,
+  PrimaryGeneratedColumn,
   UpdateDateColumn,
 } from 'typeorm';
 
 @Entity()
 export class Todo {
-  @PrimaryColumn({ type: 'integer' })
+  @PrimaryGeneratedColumn({ type: 'integer' })
   id: number;
 
   @Column({ type: 'varchar' })
